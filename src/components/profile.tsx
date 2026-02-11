@@ -81,7 +81,7 @@ export function Profile() {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Error updating profile");
 
-      setSuccess("Profile updated successfully");
+      setSuccess("Perfil actualizado correctamente");
       setPassword(""); 
       setName(data.user.name);
       setEmail(data.user.email);
