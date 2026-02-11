@@ -195,7 +195,7 @@ export function Profile() {
                           disabled={order.loading}
                           onClick={async () => {
                             const confirmCancel = window.confirm(
-                              "Are you sure you want to cancel this order?",
+                              "¿Estás seguro que quieres cancelar este pedido?",
                             );
                             if (!confirmCancel) return;
 
