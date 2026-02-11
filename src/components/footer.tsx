@@ -77,11 +77,6 @@ export function Footer() {
               </li>
               <li>
                 <a href="#" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Realizar Pedido
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                   Política de Privacidad
                 </a>
               </li>
