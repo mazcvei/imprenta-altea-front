@@ -50,7 +50,7 @@ export function Header() {
   if (loading) return null; // O un spinner mientras se valida
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/100 backdrop-blur-md border-b border-border">
+    <header className="mb-4 fixed top-0 left-0 right-0 z-50 bg-background/100 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}

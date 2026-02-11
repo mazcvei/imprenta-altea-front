@@ -64,7 +64,7 @@ export function Profile() {
     fetchMyOrders();
   }, []);
 
-  // Actualizar perfil
+
   const handleUpdateProfile = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
@@ -74,7 +74,7 @@ export function Profile() {
       const res = await fetch("http://localhost:3001/api/user/update", {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
-        credentials: "include", // envía cookie HttpOnly
+        credentials: "include",
         body: JSON.stringify({ name, email, password }),
       });
 
@@ -90,7 +90,7 @@ export function Profile() {
     }
   };
 
-  // Cancelar pedido
+
   const cancelOrder = async (orderId: number) => {
     try {
       const res = await fetch(
@@ -164,7 +164,7 @@ export function Profile() {
                   Loading orders...
                 </p>
               ) : (
-                <div className="space-y-3">
+                <div className="space-y-3 h-64 overflow-auto">
                   {orders.map((order) => (
                     <div
                       key={order.id}
