@@ -50,7 +50,6 @@ export function Profile() {
         credentials: "include",
       });
       const data = await res.json();
-      console.log(data);
       if (!res.ok) throw new Error(data.error || "Could not fetch orders");
       setOrders(data.map((o) => ({ ...o, loading: false })));
     } catch (err: any) {

@@ -16,8 +16,6 @@ export function Register() {
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
-
-    // ✅ Validación básica frontend
     if (password !== confirmPassword) {
       return setError("Las contraseñas no coinciden");
     }
@@ -40,15 +38,7 @@ export function Register() {
       if (!response.ok) {
         throw new Error(data.message || "Error en registro");
       }
-
-      console.log("Registro correcto:", data);
-
-      // ✅ Guardar token si tu backend devuelve JWT
-      //localStorage.setItem("token", data.token);
-
-      // ✅ Redirección automática
       navigate("/");
-
     } catch (err: any) {
       setError(err.message);
     }
