@@ -38,5 +38,4 @@ npm install
 npm install -D vite
 npm install -D @tailwindcss/postcss
 npm run dev
-
 ```
